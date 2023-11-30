@@ -54,3 +54,5 @@ curl -X POST http://localhost:8080/addExchangeRate \
 ```
 curl -X GET 'http://localhost:8080/getAmount?sourceCurrency=USD&targetCurrency=AUD'
 ```
+
+### Note : On the actual production environemnt, do not commit file with credentials like we have mentioned in .env, application.properties and secrets.yaml file.
