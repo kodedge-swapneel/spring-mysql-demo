@@ -1,6 +1,6 @@
 # Deploy Springboot application with MySql database in Kubernetes cluster (minikube) 
 
-## [Click here to watch the video for demonstration.]()
+## [Click here to watch the video for demonstration.](https://youtu.be/yet0-x8Ab6c)
 
 In this project, I have demonstrated how to deploy and run Springboot application with Mysql database in Kubernetes cluster. Here I have created REST API's to add and retrieve ExchangeRate in the MySql database.
 
