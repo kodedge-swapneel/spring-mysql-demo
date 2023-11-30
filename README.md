@@ -22,11 +22,12 @@ In this project, I have demonstrated how to deploy and run Springboot applicatio
 6. Build docker image in minikube : ``` docker build -t spring-mysql-demo:latest . ```
 7. To see the created image run command : ``` minikube image ls ```
 8. To deploy on kubernetes cluster run command : ``` helm install mychart ytchart ```
-9. Check deployments : ``` kubectl get all ```
-10. To connect the database run ``` kubectl get services ``` and copy my-sql service name. Then run command like this : ``` minikube service mychart-mysql-service --url ```
-11. Then connect the database using the IP address and port returned by Step 10.
-12. To call Rest api's, open a new Terminal, and run command : ``` minikube tunnel ``` and call api from the Postman or any of your favourite tool.
-13. Stop minikube using : ``` minikube stop ```
+9. To see deployed helm chart : ``` helm ls ```
+10. Check deployments : ``` kubectl get all ```
+11. To connect the database run ``` kubectl get services ``` and copy my-sql service name. Then run command like this : ``` minikube service mychart-mysql-service --url ```
+12. Then connect the database using the IP address and port returned by Step 10.
+13. To call Rest api's, open a new Terminal, and run command : ``` minikube tunnel ``` and call api from the Postman or any of your favourite tool.
+14. Stop minikube using : ``` minikube stop ```
 
 ### Sample JSON Request for the API :
 ```
