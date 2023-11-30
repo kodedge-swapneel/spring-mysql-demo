@@ -25,9 +25,10 @@ In this project, I have demonstrated how to deploy and run Springboot applicatio
 9. To see deployed helm chart : ``` helm ls ```
 10. Check deployments : ``` kubectl get all ```
 11. To connect the database run ``` kubectl get services ``` and copy my-sql service name. Then run command like this : ``` minikube service mychart-mysql-service --url ```
-12. Then connect the database using the IP address and port returned by Step 10.
+12. Then connect the database using the IP address and port returned by Step 10.  (If you get error while connecting database, then watch the video for more information)
 13. To call Rest api's, open a new Terminal, and run command : ``` minikube tunnel ``` and call api from the Postman or any of your favourite tool.
-14. Stop minikube using : ``` minikube stop ```
+14. Remove or delete deployed setup from kubernetes cluster : ``` helm uninstall mychart ```
+15. Stop minikube using : ``` minikube stop ```
 
 ### Sample JSON Request for the API :
 ```
