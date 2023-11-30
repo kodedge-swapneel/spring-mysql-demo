@@ -1,4 +1,4 @@
-# Deploy Springboot application with MySql database on Kubernetes cluster (minikube) 
+# Deploy Springboot application with MySql database in Kubernetes cluster (minikube) 
 
 ## [Click here to watch the video for demonstration.]()
 
