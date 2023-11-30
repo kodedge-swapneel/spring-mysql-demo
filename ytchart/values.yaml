@@ -1,0 +1,21 @@
+replicaCount: 1
+
+mysql:
+  databaseName: ytlecture
+
+springApp:
+  image:
+    repository: spring-mysql-demo
+    pullPolicy: IfNotPresent
+    tag: latest
+
+mysqlVolume:
+  persistentVolumeClaim:
+    storageSize: 500Mi  #1Gi
+
+  persistentVolume:
+    storageSize: 500Mi  #1Gi
+    pathOnHost: /var/lib/mysql  # Replace this with the actual path on your host machine
+
+
+  mountPath: /var/lib/mysql

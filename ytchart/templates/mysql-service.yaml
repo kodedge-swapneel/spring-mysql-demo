@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}-mysql-service
+spec:
+  selector:
+    app: {{ .Release.Name }}-mysql
+  ports:
+      - protocol: TCP
+        port: 3306
+        targetPort: 3306
+  type: ClusterIP
