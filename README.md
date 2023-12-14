@@ -1,4 +1,4 @@
-# Deploy Springboot application with MySql database in Kubernetes cluster (minikube) 
+# Deploy Spring Boot application with MySql database in Kubernetes cluster (minikube) 
 
 ## [Click here to watch the video for demonstration.](https://youtu.be/yet0-x8Ab6c)
 
@@ -55,4 +55,4 @@ curl -X POST http://localhost:8080/addExchangeRate \
 curl -X GET 'http://localhost:8080/getAmount?sourceCurrency=USD&targetCurrency=AUD'
 ```
 
-### Note : On the actual production environemnt, do not commit file with credentials like we have mentioned in .env, application.properties and secrets.yaml file.
+### Note : On the actual production environment, do not commit file with credentials like we have mentioned in .env, application.properties and secrets.yaml file.
